@@ -1,0 +1,49 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    background-color: #fbfdfc;
+}
+
+.content {
+    overflow: auto;
+    height: 100%;
+    display: flex;
+}
+
+.sidebar {
+    background-color: rgb(8, 8, 63);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0.8rem;
+    gap: 0.4rem;
+}
+
+.sidebarImage {
+    align-self: flex-start;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 0.8rem;
+}
+
+.sidebarObject {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.8s ease-in-out;
+}
+
+.sidebarObject img + span {
+    display: none;
+}
+
+.sidebarObject img:hover + span {
+    display: block;
+}
